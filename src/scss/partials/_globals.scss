@@ -1,0 +1,21 @@
+/***************************************************
+    APP GLOBALS
+ ***************************************************/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font;
+    font-size: $base-font;
+    color: $font-col;
+    background: $back-col;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

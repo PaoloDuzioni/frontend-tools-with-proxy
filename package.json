@@ -1,0 +1,33 @@
+{
+    "name": "frontend-tools-with-proxy",
+    "version": "1.0.0",
+    "description": "Front-end tools (powered by webpack 5) to make your development easier when working on a local server as XAMPP or MAMP.",
+    "scripts": {
+        "dev": "webpack --mode development --watch",
+        "prod": "webpack --mode production"
+    },
+    "author": "Paolo Duzioni",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/cli": "^7.11.6",
+        "@babel/core": "^7.11.6",
+        "@babel/preset-env": "^7.11.5",
+        "babel-loader": "^8.2.2",
+        "browser-sync": "^2.26.12",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^4.3.0",
+        "mini-css-extract-plugin": "^0.11.2",
+        "postcss-loader": "^4.1.0",
+        "postcss-preset-env": "^6.7.0",
+        "sass": "^1.30.0",
+        "sass-loader": "^10.0.2",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12"
+    },
+    "browserslist": [
+        "> 2%",
+        "last 2 versions"
+    ]
+}
