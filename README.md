@@ -2,14 +2,14 @@
 
 Front-end tools (powered by webpack 5) to make your development easier when working on a local server as XAMPP or MAMP.
 
-This starter dont create any index.html file but only JS and CSS files in a dist folder. In this way you can choose to embed those compiled files wherever you want, even to a index.php file.
+This starter **will not** create any index file but only `.js` and `.css` files in a `dist` folder (or as you decide to name it). In this way you can embed those compiled files wherever you want, even to a `.php` file.
 
 ## What comes with those tools?
 
-- Dev server with live reload
-- Babel
+- Dev server with live reload (browser updates on file save)
+- Babel for ES6 modules and last generation JavaScript features
 - SCSS with vendor prefixing
-- Build for production
+- Build for production, with minified CSS and a single minified JavaScript file.
 
 ## Install
 
@@ -17,13 +17,15 @@ To start run `npm install` on the root of this folder to install all needed depe
 
 ## Development
 
-Start the development server with: `npm run dev`.
+Open the `webpack.config.js` file and customize the compiled folder / file names and your proxy link as you need, for example: `http://localhost/your-site`.
 
-This will even create a `dist` folder containing your compiled files, and will keep watching for changes on `JS`, `CSS`, `HTML` and `PHP` files.
+Once finished with the customizations, start the development server with: `npm run dev`.
+
+This will even create a `dist` folder containing your compiled files, and will keep watching for changes on `.js`, `.css`, `.html` and `.php` files (you can even extend this list on the configurations).
 
 ## Production
 
-To build and optimized version of your `JS` and `CSS` files for production run: `npm run prod`
+To build and optimized version of your `.js` and `.css` files for production run: `npm run prod`
 
 ## Config files
 

@@ -17,7 +17,7 @@ module.exports = {
         filename: 'js/app.js',
     },
     plugins: [
-        // Cleaner DIST folder
+        // Cleaner for DIST folder
         new CleanWebpackPlugin(),
         // Extract CSS from SCSS
         new MiniCssExtractPlugin({
