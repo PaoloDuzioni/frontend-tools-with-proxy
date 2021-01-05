@@ -1,7 +1,6 @@
 var path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // Project Setup, edit as you need
 const jsPath = './src/js';
@@ -17,8 +16,6 @@ module.exports = {
         filename: 'js/app.js',
     },
     plugins: [
-        // Cleaner for DIST folder
-        new CleanWebpackPlugin(),
         // Extract CSS from SCSS
         new MiniCssExtractPlugin({
             filename: 'css/app.css',
@@ -32,6 +29,7 @@ module.exports = {
                 './**/*.html',
                 './**/*.php',
             ],
+            notify: false
         }),
     ],
     module: {
